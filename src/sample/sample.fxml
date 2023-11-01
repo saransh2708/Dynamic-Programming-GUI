@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane prefHeight="386.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+        <tabs>
+          <Tab fx:id="tab1" closable="false" text="Dijkstra">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="365.0" prefWidth="466.0">
+               <children>
+                  <Label layoutX="167.0" layoutY="34.0" prefHeight="17.0" prefWidth="137.0" text="DIJKSTRA" textAlignment="CENTER" AnchorPane.leftAnchor="167.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label1" layoutX="77.0" layoutY="120.0" prefHeight="17.0" prefWidth="157.0" text="Enter number of Vertices :">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label2" layoutX="78.0" layoutY="162.0" prefHeight="17.0" prefWidth="148.0" text="Enter number of Edges :">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="text1" layoutX="236.0" layoutY="116.0" />
+                  <TextField fx:id="text2" layoutX="236.0" layoutY="158.0" />
+                  <Button fx:id="button1" layoutX="194.0" layoutY="257.0" mnemonicParsing="false" onAction="#whenClicked" prefHeight="25.0" prefWidth="80.0" text="Submit">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="label3" layoutX="78.0" layoutY="211.0" prefHeight="17.0" prefWidth="151.0" text="Enter Weights                  :" visible="false">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="text3" layoutX="236.0" layoutY="207.0" visible="false" />
+                  <Label layoutX="154.0" layoutY="299.0" text="Time complexity : E log(V) ">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            </content>
+          </Tab>
+      <Tab fx:id="tab4" closable="false" text="0-1 Knapsack">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="148.0" layoutY="33.0" prefHeight="28.0" prefWidth="209.0" text="0-1 KNAPSACK">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="knlabel1" layoutX="98.0" layoutY="121.0" text="Enter the number of items   :">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="knlabel2" layoutX="95.0" layoutY="170.0" prefHeight="17.0" prefWidth="166.0" text="Enter maximum weight      :">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="kntext1" layoutX="269.0" layoutY="117.0" />
+                  <TextField fx:id="kntext2" layoutX="269.0" layoutY="166.0" />
+                  <Button fx:id="knbutton" layoutX="198.0" layoutY="240.0" mnemonicParsing="false" onAction="#whenClicked4" prefHeight="25.0" prefWidth="70.0" text="Submit">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="162.0" layoutY="286.0" text="Time Complexity : O(nW)">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="tab2" closable="false" text="Kruskal">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="172.0" layoutY="34.0" prefHeight="28.0" prefWidth="132.0" text="KRUSKAL">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font></Label>
+                  <Label fx:id="klabel1" layoutX="51.0" layoutY="131.0" prefHeight="17.0" prefWidth="151.0" text="Enter number of Vertices :">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="klabel2" layoutX="51.0" layoutY="170.0" prefHeight="17.0" prefWidth="148.0" text="Enter number of Edges   :">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ktext3" layoutX="220.0" layoutY="207.0" visible="false" />
+                  <TextField fx:id="ktext2" layoutX="220.0" layoutY="166.0" />
+                  <TextField fx:id="ktext1" layoutX="220.0" layoutY="127.0" />
+                  <Label fx:id="klabel3" layoutX="50.0" layoutY="211.0" prefHeight="17.0" prefWidth="151.0" text="Enter Weights                  :" visible="false">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="kbutton" layoutX="180.0" layoutY="253.0" mnemonicParsing="false" onAction="#whenClicked2" prefHeight="25.0" prefWidth="80.0" text="Submit">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="137.0" layoutY="303.0" prefHeight="17.0" prefWidth="167.0" text="Time Complexity :  E log(V)">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="tab3" closable="false" text="Prims">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="182.0" layoutY="33.0" prefHeight="28.0" prefWidth="103.0" text="PRIM'S">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="plabel1" layoutX="70.0" layoutY="122.0" prefHeight="17.0" prefWidth="151.0" text="Enter number of Vertices :">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="plabel2" layoutX="72.0" layoutY="158.0" prefHeight="17.0" prefWidth="148.0" text="Enter number of Edges :">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ptext1" layoutX="233.0" layoutY="118.0" />
+                  <TextField fx:id="ptext3" layoutX="233.0" layoutY="191.0" visible="false" />
+                  <Button fx:id="pbutton" layoutX="180.0" layoutY="243.0" mnemonicParsing="false" onAction="#whenClicked3" prefHeight="25.0" prefWidth="80.0" text="Submit">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="plabel3" layoutX="71.0" layoutY="195.0" prefHeight="17.0" prefWidth="151.0" text="Enter Weights                  :" visible="false">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ptext2" layoutX="233.0" layoutY="154.0" />
+                  <Label layoutX="138.0" layoutY="293.0" prefHeight="17.0" prefWidth="168.0" text="Time Complexity : E log(V)">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="tab5" closable="false" text="Travelling Salesman">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="85.0" layoutY="30.0" prefHeight="28.0" prefWidth="297.0" text="TRAVELING SALESMAN">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tlabel1" layoutX="85.0" layoutY="131.0" prefHeight="17.0" prefWidth="158.0" text="Enter number of vertices :">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tlabel2" layoutX="85.0" layoutY="170.0" prefHeight="17.0" prefWidth="147.0" text="Enter number of edges    :">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ttext1" layoutX="243.0" layoutY="127.0" />
+                  <TextField fx:id="ttext2" layoutX="243.0" layoutY="166.0" />
+                  <TextField fx:id="ttext3" layoutX="243.0" layoutY="211.0" visible="false" />
+                  <Label fx:id="tlabel3" layoutX="85.0" layoutY="215.0" prefHeight="17.0" prefWidth="141.0" text="Enter Weight    :" visible="false">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="201.0" layoutY="258.0" mnemonicParsing="false" onAction="#whenClicked5" prefHeight="25.0" prefWidth="63.0" text="Submit">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="148.0" layoutY="314.0" text="Time Complexity : 2^n*n^2">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="tab6" closable="false" onSelectionChanged="#whenClicked6" text="Answer">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="text4" editable="false" layoutX="5.0" layoutY="71.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="466.0" promptText="Results are here" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="71.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></TextArea>
+                  <Label layoutX="182.0" layoutY="32.0" prefHeight="27.0" prefWidth="121.0" text="Result :">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+        </tabs>
+      </TabPane>
